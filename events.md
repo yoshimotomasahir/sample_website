@@ -1,0 +1,4 @@
+---
+title: "イベント"
+permalink: /events/
+---

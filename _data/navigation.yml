@@ -1,0 +1,52 @@
+main:
+  - title: "組織概要"
+    url: /organization/
+  - title: "研究環境改善"
+    url: /research-environment/
+  - title: "研究ファンド"
+    url: /research-fund/
+  - title: "イベント"
+    url: /events/
+  - title: "お知らせ"
+    url: /news/
+
+pages:
+  - title: "組織概要"
+    url: /organization/
+    children:
+      - title: "幹事会"
+        url: /organization/board/
+      - title: "選挙"
+        url: /organization/election/
+  - title: "研究環境改善"
+    url: /research-environment/
+    children:
+      - title: "取り組み一覧"
+        url: /research-environment/initiatives/
+  - title: "研究ファンド"
+    url: /research-fund/
+    children:
+      - title: "みんなのファンド"
+        url: /research-fund/minna/
+      - title: "ぜんいんのファンド"
+        url: /research-fund/zenin/
+  - title: "イベント"
+    url: /events/
+    children:
+      - title: "七夕"
+        url: /events/tanabata/
+      - title: "バーベキュー"
+        url: /events/barbecue/
+  - title: "お知らせ"
+    url: /news/
+    children:
+      - title: "議事録"
+        url: /news/minutes/
+      - title: "おたより"
+        url: /news/letters/
+  - title: "連絡先"
+    url: /contact/
+  - title: "サイトマップ"
+    url: /sitemap/
+  - title: "リンク集"
+    url: /links/

@@ -1,9 +1,14 @@
 ---
 layout: single
-author_profile: true
 title: "デザイン確認"
 ---
 
+## ようこそ
+とある会議は、いろいろがんばってよりよくする活動をしています。
+
+## 最近の投稿
+
+[幹事会 議事録を掲載しました]({% post_url 2026-07-03-first-post %})
 Minimal Mistakes のスキンをURLパラメータで切り替えて確認できます。
 
 <form method="get" action="{{ "/" | relative_url }}">

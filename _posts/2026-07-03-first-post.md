@@ -1,7 +1,7 @@
 ---
-title: "First post"
+title: "幹事会 議事録を掲載しました"
 date: 2026-07-03
 layout: single
 ---
 
-This is my first post.
+幹事会 議事録を掲載しました。
