@@ -1,0 +1,23 @@
+title: "とある会議"
+description: "とある会議のウェブサイトのデザイン確認用"
+
+url: "http://yoshimotomasahir.github.io"
+baseurl: "/sample_website"
+
+remote_theme: "mmistakes/minimal-mistakes@4.28.0"
+
+plugins:
+  - jekyll-include-cache
+
+minimal_mistakes_skin: "default"
+
+author:
+  name: "Masahiro Yoshimoto"
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
