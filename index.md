@@ -6,6 +6,34 @@ title: "デザイン確認"
 
 Minimal Mistakes のスキンをURLパラメータで切り替えて確認できます。
 
+<form method="get" action="{{ "/" | relative_url }}">
+  <label for="skin-select">Skin</label>
+  <select id="skin-select" name="skin">
+    <option value="default">default</option>
+    <option value="air">air</option>
+    <option value="aqua">aqua</option>
+    <option value="contrast">contrast</option>
+    <option value="dark">dark</option>
+    <option value="dirt">dirt</option>
+    <option value="mint">mint</option>
+    <option value="neon">neon</option>
+    <option value="plum">plum</option>
+    <option value="sunrise">sunrise</option>
+  </select>
+  <button type="submit">Apply</button>
+</form>
+
+<script>
+  (function () {
+    var select = document.getElementById("skin-select");
+    var skin = document.documentElement.dataset.skin || "default";
+    select.value = skin;
+    select.addEventListener("change", function () {
+      select.form.submit();
+    });
+  })();
+</script>
+
 | Skin | URL |
 | --- | --- |
 | default | [default]({{ "/" | relative_url }}?skin=default) |
