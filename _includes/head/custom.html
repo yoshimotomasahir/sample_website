@@ -1,0 +1,28 @@
+{% assign available_skins = site.available_skins | default: "default,air,aqua,contrast,dark,dirt,mint,neon,plum,sunrise" %}
+<script>
+  (function () {
+    var availableSkins = [{% for skin in available_skins %}"{{ skin }}"{% unless forloop.last %},{% endunless %}{% endfor %}];
+    var params = new URLSearchParams(window.location.search);
+    var skin = params.get("skin") || localStorage.getItem("minimal-mistakes-skin") || "default";
+
+    if (availableSkins.indexOf(skin) === -1) {
+      skin = "default";
+    }
+
+    document.documentElement.dataset.skin = skin;
+    localStorage.setItem("minimal-mistakes-skin", skin);
+
+    if (skin !== "default") {
+      var href = "{{ site.baseurl }}/assets/css/skins/" + skin + ".css";
+      var link = document.createElement("link");
+      link.id = "skin-stylesheet";
+      link.rel = "stylesheet";
+      link.href = href;
+      document.head.appendChild(link);
+
+      document.addEventListener("DOMContentLoaded", function () {
+        document.head.appendChild(link);
+      });
+    }
+  })();
+</script>

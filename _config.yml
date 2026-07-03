@@ -11,6 +11,18 @@ plugins:
 
 minimal_mistakes_skin: "default"
 
+available_skins:
+  - default
+  - air
+  - aqua
+  - contrast
+  - dark
+  - dirt
+  - mint
+  - neon
+  - plum
+  - sunrise
+
 author:
   name: "Masahiro Yoshimoto"
 
